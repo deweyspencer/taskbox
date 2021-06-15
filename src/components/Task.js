@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function Task({ task: { id, title, state }, onArchive, onPinTask }) {
+export default function Task({ task: { id, title, state }, onArchiveTask, onPinTask }) {
 	return (
 		<div className={`list-item ${state}`}>
 			<label className="checkbox">
@@ -11,7 +11,7 @@ export default function Task({ task: { id, title, state }, onArchive, onPinTask 
 					disabled={true}
 					name="checked"
 				/>
-				<span className="checkbox-custom" onClick={() => onArchive(id)} />
+				<span className="checkbox-custom" onClick={() => onArchiveTask(id)} />
 			</label>
 			<div className="title">
 				<input type="text" value={title} readOnly="true" placeholder="Input title" />
