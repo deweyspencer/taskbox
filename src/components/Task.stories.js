@@ -34,3 +34,12 @@ Archived.args = {
         state: 'TASK_ARCHIVED',
     },
 };
+
+const longTitleString = `We can put a whole lot of text in here to see what will happen to the UI if a task item has a longer label than we had initially intended or expected anyone to use`
+export const LongTitle = Template.bind({});
+LongTitle.args = {
+    task: {
+        ...Default.args.task,
+        title: longTitleString,
+    },
+};
