@@ -34,7 +34,7 @@ PureInboxScreen.propTypes = {
   error: PropTypes.string,
 };
 
-PureInboxScreen.propTypes = {
+PureInboxScreen.defaultTypes = {
   error: null,
 };
 
